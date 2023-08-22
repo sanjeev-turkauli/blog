@@ -16,7 +16,7 @@
                             <div class="col-md-9">
                                 <p>
                                     in
-                                    <a href="html5-templates.html">html5</a>
+                                    <a href="html5-templates.html">html5 67</a>
                                     ,
                                     <a href="#">templates</a>
                                     <time>23-july-2015<time>
