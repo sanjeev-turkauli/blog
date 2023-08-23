@@ -16,6 +16,7 @@ class Navbar extends Component
     public function logOut(){
         if(Auth::check()){
             Auth::logout();
+            return redirect("/");
         }
     }
 

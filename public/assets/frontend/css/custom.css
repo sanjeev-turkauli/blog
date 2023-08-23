@@ -1,5 +1,5 @@
 .user-action{
-    width: 20%;
+    width: 30%;
 }
 
 .user-action i{
@@ -21,10 +21,20 @@
     font-size: 10px;
 }
 
-#swal2-title{
-    font-size: 2em !important;
+.hover-box{
+    cursor: pointer;
 }
 
-.swal2-icon-show{
-    font-size: 1.4em;
+/* hover effect Image */
+
+.hoverImage{
+    overflow: hidden;
+}
+
+.hoverImage img{
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1).5s;
+}
+
+.hover-box:hover .hoverImage img{
+    transform: scale(1.2) rotate(-8deg);
 }

@@ -1,50 +1,20 @@
 <div>
-    <footer>
+    <footer class="blog-footer bg-dark" style="height: 14vh;">
         <div class="container">
             <div class="row">
-                <!-- copyright -->
-                <div class="col-md-4 col-sm-4">
-                    copyright &copy; 2015 <a href="#" style="margin-left: 4px;">Your website Link</a>
-                    <br>
-                    Theme by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
-                </div>
-
-                <!-- footer share button -->
-                <div class="col-md-4 col-sm-4">
-                    <ul class="social-share text-center">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    </ul> <!-- /.social-share -->
-                </div>
-
-                <!-- footer-nav -->
-                <div class="col-md-4 col-sm-4">
-                    <ul class="footer-nav">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="privacy.html">Privacy</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul> <!-- /.footer-nav -->
-                </div>
+                <div class="col-md-4">1</div>
+                <div class="col-md-4">2</div>
+                <div class="col-md-4">3</div>
             </div>
         </div>
     </footer>
 
-    <!--  Necessary scripts  -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-    <script type="text/javascript" src="{{url('assets/frontend/js/jquery-2.1.3.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('assets/frontend/js/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('assets/frontend/js/jQuery.scrollSpeed.js')}}"></script>
-
-    <!-- smooth-scroll -->
-
-    <!-- <script>
-        $(function() {
-            jQuery.scrollSpeed(100, 1000);
-        });
-    </script> -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <script>
         window.addEventListener("showAlertMessage", (data) => {
@@ -65,6 +35,16 @@
                 title: `${data.detail.title}`
             })
 
+        });
+
+        $(document).ready(function(){
+            $(".hover-box").mouseenter(function(){
+                $(this).find(".hover-effect").addClass("shadow-lg");
+            });
+            
+            $(".hover-box").mouseleave(function(){
+                $(this).find(".hover-effect").removeClass("shadow-lg");
+            })
         });
     </script>
 </div>
